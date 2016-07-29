@@ -22,14 +22,17 @@ setup(
     license='Unlicense',
     classifiers=[
         'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
+        'Operating System :: Unix',
+        'Intended Audience :: System Administrators',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
+        'Topic :: Internet :: WWW/HTTP :: HTTP Servers'
     ],
-    keywords='apache freebsd configuration',
+    keywords='apache unix configuration',
     packages=find_packages(exclude=['tests']),
     entry_points={
         'console_scripts': ['a2ensite=ensite.ensite:a2ensite',
                             'a2dissite=ensite.ensite:a2dissite']
     },
+    download_url=''https://github.com/zathras777/apache-ensite/archive/0.2.zip'
 )
