@@ -162,8 +162,8 @@ def do_command_line():
 
     args = parser.parse_args()
     if args.version:
-        print("{} version {}".format(sys.argv[0], __version__))
-        print("https://github.com/zathras777/apache2-ensite")
+        print("{} - version {}".format(os.path.dirname(sys.argv[0]), __version__))
+        print("https://github.com/zathras777/apache-ensite")
         sys.exit(0)
 
     installs = [A2Install(poss) for poss in glob.glob('/usr/local/etc/apache2*')]
@@ -190,7 +190,7 @@ def do_command_line():
     if not install.check_include_entry(False):
         print("""
 The required include entry does not appear to be present.
-Changes made may not be viisble.""")
+Changes made may not be visible.""")
         if not args.setup:
             print("Use the --setup flag to try and change the configuration automatically.")
 
