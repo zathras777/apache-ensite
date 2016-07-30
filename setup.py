@@ -34,5 +34,5 @@ setup(
         'console_scripts': ['a2ensite=ensite.ensite:a2ensite',
                             'a2dissite=ensite.ensite:a2dissite']
     },
-    download_url=''https://github.com/zathras777/apache-ensite/archive/0.2.zip'
+    download_url='https://github.com/zathras777/apache-ensite/archive/0.2.zip'
 )
