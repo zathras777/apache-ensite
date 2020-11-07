@@ -16,6 +16,7 @@ setup(
     version=__version__,
     description='Apache 2 Configuration file management utilities',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/zathras777/apache-ensite',
     author='david reid',
     author_email='zathrasorama@gmail.com',
